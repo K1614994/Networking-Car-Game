@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Drive : Photon.MonoBehaviour {
@@ -8,6 +9,7 @@ public class Drive : Photon.MonoBehaviour {
     private PhotonView PhotonView;
     private Vector3 TargetPosition;
     private Quaternion TargetRotation;
+
     
 
     private void Awake()
@@ -23,29 +25,28 @@ public class Drive : Photon.MonoBehaviour {
         }
     }
 
-    
+    private void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update () {
         if (PhotonView.isMine)
         {
-            //this.transform.GetChild(0).gameObject.GetComponent<Camera>().enabled = true;
+            
             CheckInput();
         }
         else
         {
-           // this.transform.GetChild(0).gameObject.GetComponent<Camera>().enabled = false;
+           
             SmoothMove();
         }
-        //float translation = CrossPlatformInputManager.GetAxis("Vertical") * -speed;
-        //float rotation = CrossPlatformInputManager.GetAxis("Horizontal") * rotationSpeed;
 
-        //translation *= Time.deltaTime;
-        //rotation *= Time.deltaTime;
-        //transform.Translate(0, 0, translation);
-        //transform.Rotate(0, rotation, 0);
-
+        
 	}
+
+    
 
     private void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
