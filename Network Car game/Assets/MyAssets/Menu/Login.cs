@@ -28,7 +28,7 @@ public class Login : MonoBehaviour {
             DBManager.username = nameField.text;
             nameField.text = "";
             passwordField.text = "";
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("AccountPage");
 
         }
 

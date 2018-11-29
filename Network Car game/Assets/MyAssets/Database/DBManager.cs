@@ -9,7 +9,7 @@ public static class DBManager
     public static string username;
     public static string email;
     public static int carColour;
-    public static int score;
+    public static int score = 0;
     public static int gamesPlayed;
     public static int gamesWon;
     public static int gamesLost;

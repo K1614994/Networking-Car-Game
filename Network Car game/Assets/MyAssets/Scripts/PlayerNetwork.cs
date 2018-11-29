@@ -25,7 +25,7 @@ public class PlayerNetwork : MonoBehaviour
 
 
         //Code to change from Login System
-        PlayerName = DBManager.username + Random.Range(1000, 9999);
+        PlayerName = DBManager.username;
 
         PhotonNetwork.sendRate = 60;
         PhotonNetwork.sendRateOnSerialize = 30;
