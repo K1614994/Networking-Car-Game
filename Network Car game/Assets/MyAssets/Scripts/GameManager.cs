@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Text time;
     public int score;
     public Text scoreT;
+    public int score1;
+    public Text scoreText;
 
     GameObject[] Collectables;
 
@@ -30,6 +32,8 @@ public class GameManager : MonoBehaviour
         time.text = timer.ToString();
 
         scoreT.text = score.ToString();
+        score1 = DBManager.score;
+        scoreText.text = score1.ToString();
 
         if (timer <= 0)
         {
@@ -49,5 +53,6 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore()
     {
         score = score + 1;
+        DBManager.score = DBManager.score + 1;
     }
 }
