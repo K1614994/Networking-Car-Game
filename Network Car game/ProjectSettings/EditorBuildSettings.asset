@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyAssets/SceneTest.unity
     guid: bb9e9bc899e5e294a833a22f9da371d0
+  - enabled: 1
+    path: Assets/MyAssets/Menu/LoginPage.unity
+    guid: 436e1a31a3b0c754992ee5e9745fd247
   m_configObjects: {}

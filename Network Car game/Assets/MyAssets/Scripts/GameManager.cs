@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         timer = 100;
-        score = 0;
+
 
         Collectables = GameObject.FindGameObjectsWithTag("Collectable");
     }
