@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpItem : MonoBehaviour {
+public class PickUpItem5 : MonoBehaviour {
 
     GameManager gm;
 
 	// Use this for initialization
 	void Start () {
-        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-	}
+		gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,8 +22,7 @@ public class PickUpItem : MonoBehaviour {
         if (other.tag == "Player")
         {
             Destroy(gameObject);
-            gm.IncreaseScore();
+            gm.IncreaseScore5();
         }
     }
-
 }

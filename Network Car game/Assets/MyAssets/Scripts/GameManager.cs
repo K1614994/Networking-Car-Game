@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
    
 
     GameObject[] Collectables;
+    GameObject[] Collectables5;
 
     // Use this for initialization
     void Start()
@@ -20,7 +21,8 @@ public class GameManager : MonoBehaviour
         timer = 100;
 
         
-        Collectables = GameObject.FindGameObjectsWithTag("Collectable");
+        Collectables = GameObject.FindGameObjectsWithTag("Collectable") ;
+        Collectables5 = GameObject.FindGameObjectsWithTag("Collectable5");
     }
 
     // Update is called once per frame
@@ -45,12 +47,24 @@ public class GameManager : MonoBehaviour
             Collectables[MyIndex].SetActive(false);
         }
 
+        if (timer == 70)
+        {
+            var MyIndex5 = Random.Range(0, Collectables5.Length);
+            Collectables[MyIndex5].SetActive(false);
+        }
+
 
     }
 
     public void IncreaseScore()
     {
         score = score + 1;
+        DBManager.score = score;
+    }
+
+    public void IncreaseScore5()
+    {
+        score = score + 5;
         DBManager.score = score;
     }
 }

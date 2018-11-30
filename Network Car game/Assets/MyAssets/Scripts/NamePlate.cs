@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreSystem : MonoBehaviour {
+public class NamePlate : MonoBehaviour {
 
     // create variables, text and buttons
-    public TextMesh scoreDisplay;
+    public TextMesh NameDisplay;
 
     // Use this for initialization
     void Start () {
-        scoreDisplay.text = " " + DBManager.username; // assign this text and variable to the .text
+        NameDisplay.text = " " + DBManager.username; // assign this text and variable to the .text
     }
 	
 	// Update is called once per frame
