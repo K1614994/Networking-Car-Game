@@ -10,11 +10,11 @@ public class ScoreSystem : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        scoreDisplay.text = " " + DBManager.username + DBManager.score; // assign this text and variable to the .text
+        scoreDisplay.text = " " + DBManager.username; // assign this text and variable to the .text
     }
 	
 	// Update is called once per frame
 	void Update () {
-        scoreDisplay.text = " " + DBManager.username + DBManager.score; // assign this text and variable to the .text
+        
     }
 }
