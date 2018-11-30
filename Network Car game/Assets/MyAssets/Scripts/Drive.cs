@@ -70,7 +70,7 @@ public class Drive : Photon.MonoBehaviour {
 
     private void CheckInput()
     {
-        float speed = 10.0f;
+        float speed = 30.0f;
         float rotationSpeed = 100.0f;
 
         float vertical = Input.GetAxis("Vertical");
