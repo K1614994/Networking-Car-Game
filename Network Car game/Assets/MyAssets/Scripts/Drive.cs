@@ -18,10 +18,12 @@ public class Drive : Photon.MonoBehaviour {
         if(PhotonView.isMine)
         {
             this.transform.GetChild(0).gameObject.GetComponent<Camera>().enabled = true;
+            this.transform.GetChild(2).gameObject.GetComponent<Camera>().enabled = true;
         }
         else
         {
             this.transform.GetChild(0).gameObject.GetComponent<Camera>().enabled = false;
+            this.transform.GetChild(2).gameObject.GetComponent<Camera>().enabled = false;
         }
     }
 
