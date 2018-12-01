@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        timer = 100;
+        timer = 10;
 
         
         Collectables = GameObject.FindGameObjectsWithTag("Collectable") ;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         if (timer <= 0)
         {
             PhotonNetwork.LeaveRoom();
-            PhotonNetwork.LoadLevel(0);
+            PhotonNetwork.LoadLevel("GameOverMenu");
         }
 
         if (timer == 90 || timer == 80 || timer == 70 || timer == 60 || timer == 50 || timer == 40)
@@ -67,4 +67,6 @@ public class GameManager : MonoBehaviour
         score = score + 5;
         DBManager.score = score;
     }
+
+   
 }

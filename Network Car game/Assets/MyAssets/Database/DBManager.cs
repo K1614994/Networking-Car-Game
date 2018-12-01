@@ -13,9 +13,9 @@ public static class DBManager
     public static int gamesPlayed;
     public static int gamesWon;
     public static int gamesLost;
-    public static int tTimeHeld;
-    public static int hTimeHeld;
-    public static int aTimeHeld;
+    public static int tCollected;
+    public static int hCollected;
+    public static int aCollected;
 
 
     //set up static bool

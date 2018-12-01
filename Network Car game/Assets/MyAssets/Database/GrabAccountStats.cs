@@ -13,9 +13,9 @@ public class GrabAccountStats : MonoBehaviour {
     public Text gamesWon;
     public Text gamesLost;
     public Text gamesPlayed;
-    public Text tTimeHeld;
-    public Text hTimeHeld;
-    public Text aTimeHeld;
+    public Text tCollected;
+    public Text hCollected;
+    public Text aCollected;
 
     IEnumerator Start()
     {
@@ -42,11 +42,11 @@ public class GrabAccountStats : MonoBehaviour {
         gamesWon.text = "Games Won: " + DBManager.gamesWon;
         DBManager.gamesLost = int.Parse(webResults[4]);
         gamesLost.text = "Games Lost: " + DBManager.gamesLost;
-        DBManager.tTimeHeld = int.Parse(webResults[5]);
-        tTimeHeld.text = "Total Time Held: " + DBManager.tTimeHeld;
-        DBManager.hTimeHeld = int.Parse(webResults[6]);
-        hTimeHeld.text = "Highest Time Held: " + DBManager.hTimeHeld;
-        DBManager.aTimeHeld = int.Parse(webResults[7]);
-        aTimeHeld.text = "Average Time Held: " + DBManager.aTimeHeld;
+        DBManager.tCollected = int.Parse(webResults[5]);
+        tCollected.text = "Total Points Collected: " + DBManager.tCollected;
+        DBManager.hCollected = int.Parse(webResults[6]);
+        hCollected.text = "Highest Points Collected: " + DBManager.hCollected;
+        DBManager.aCollected = int.Parse(webResults[7]);
+        aCollected.text = "Average Points Collected: " + DBManager.aCollected;
     }
 }
