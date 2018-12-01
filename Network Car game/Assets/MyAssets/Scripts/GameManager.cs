@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        timer = 10;
+        timer = 20;
 
         
         Collectables = GameObject.FindGameObjectsWithTag("Collectable") ;
