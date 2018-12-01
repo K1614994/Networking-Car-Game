@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1721366188085406}
+  m_RootGameObject: {fileID: 1492332900412614}
   m_IsPrefabAsset: 1
---- !u!1 &1721366188085406
+--- !u!1 &1492332900412614
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4679883777589228}
-  - component: {fileID: 33691921683847310}
-  - component: {fileID: 23383591136673666}
-  - component: {fileID: 135503223367659960}
-  - component: {fileID: 114061823736146080}
+  - component: {fileID: 4090722640721898}
+  - component: {fileID: 33655275066969678}
+  - component: {fileID: 23362547308249154}
+  - component: {fileID: 136074908573717426}
+  - component: {fileID: 114501226777229484}
   m_Layer: 0
-  m_Name: Collectable-Score
-  m_TagString: Collectable
+  m_Name: TimeIncrease
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4679883777589228
+--- !u!4 &4090722640721898
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1721366188085406}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 91.69, y: 1.19, z: -92.85}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1492332900412614}
+  m_LocalRotation: {x: 0.46874225, y: 0.47786522, z: 0.529294, w: 0.52131885}
+  m_LocalPosition: {x: 14.13, y: 1.77, z: -13.759013}
+  m_LocalScale: {x: 1.5416949, y: 0.09549875, z: 1.5416949}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23383591136673666
+  m_LocalEulerAnglesHint: {x: -0.98200005, y: 84.038, z: 89.985}
+--- !u!23 &23362547308249154
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1721366188085406}
+  m_GameObject: {fileID: 1492332900412614}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d7d26f402a86ac645af4801d37fcac2e, type: 2}
+  - {fileID: 2100000, guid: 72efb82780ba5fe409395cc9dd2ddde9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,33 +78,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33691921683847310
+--- !u!33 &33655275066969678
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1721366188085406}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114061823736146080
+  m_GameObject: {fileID: 1492332900412614}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114501226777229484
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1721366188085406}
+  m_GameObject: {fileID: 1492332900412614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5ee549060359ef4d8ac4089591a13d1, type: 3}
+  m_Script: {fileID: 11500000, guid: c16e075dbf80d3a4c964586ca2696b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &135503223367659960
-SphereCollider:
+--- !u!136 &136074908573717426
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1721366188085406}
+  m_GameObject: {fileID: 1492332900412614}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

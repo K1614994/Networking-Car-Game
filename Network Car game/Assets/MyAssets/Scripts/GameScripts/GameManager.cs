@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        timer = 20;
+        timer = 60;
 
         
         Collectables = GameObject.FindGameObjectsWithTag("Collectable") ;
@@ -41,17 +41,20 @@ public class GameManager : MonoBehaviour
             PhotonNetwork.LoadLevel("GameOverMenu");
         }
 
-        if (timer == 90 || timer == 80 || timer == 70 || timer == 60 || timer == 50 || timer == 40)
+        if (timer <= 50)
         {
-            var MyIndex = Random.Range(0, Collectables.Length);
-            Collectables[MyIndex].SetActive(false);
+            //var MyIndex = Random.Range(0, Collectables5.Length);
+            Collectables5[0].GetComponent<MeshRenderer>().enabled = false; 
+            Collectables5[0].GetComponent<SphereCollider>().enabled = false;
+            
         }
+         
 
-        if (timer == 70)
-        {
-            var MyIndex5 = Random.Range(0, Collectables5.Length);
-            Collectables[MyIndex5].SetActive(false);
-        }
+        //if (timer == 70)
+        //{
+        //    var MyIndex5 = Random.Range(0, Collectables5.Length);
+        //    Collectables[MyIndex5].SetActive(false);
+        //}
 
 
     }
@@ -66,6 +69,11 @@ public class GameManager : MonoBehaviour
     {
         score = score + 5;
         DBManager.score = score;
+    }
+
+    public void IncreaseTime()
+    {
+        timer = timer + 10;
     }
 
    
