@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 249931316}
   - component: {fileID: 249931315}
   m_Layer: 5
-  m_Name: averageTimeHeldText
+  m_Name: powerUpsCollectedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,7 +1409,7 @@ GameObject:
   - component: {fileID: 554630816}
   - component: {fileID: 554630815}
   m_Layer: 5
-  m_Name: highestTimeHeldText
+  m_Name: highestPointsCollectedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3191,7 +3191,7 @@ GameObject:
   - component: {fileID: 1055399638}
   - component: {fileID: 1055399637}
   m_Layer: 5
-  m_Name: totalTimeHeldText
+  m_Name: totalPointsCollectedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

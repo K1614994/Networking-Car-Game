@@ -6,7 +6,8 @@ public class GameOver : MonoBehaviour {
 
     public Text WinStatus;
     public Text PointsCollected;
-    public int test;
+    public int tCol;
+    public int pCol;
     GameManager gm; // Reference to the GameManager script
     // Use this for initialization
     void Start () {
@@ -14,8 +15,13 @@ public class GameOver : MonoBehaviour {
         Debug.Log(DBManager.score);
        
         PointsCollected.text =  "You have collected " + DBManager.score + " points"; // assign this text and variable to the .text
-        test = DBManager.tCollected;
-        DBManager.tCollected = test + DBManager.score;
+        tCol = DBManager.tCollected;
+        DBManager.tCollected = tCol + DBManager.score;
+
+        pCol = DBManager.pTotalCollected;
+        DBManager.pTotalCollected = pCol + DBManager.pCollected;
+
+
         if (DBManager.score > DBManager.hCollected)
         {
             DBManager.hCollected = DBManager.score;
@@ -56,7 +62,7 @@ public class GameOver : MonoBehaviour {
         form.AddField("gamesWon", DBManager.gamesWon);
         form.AddField("totalPoints", DBManager.tCollected); 
         form.AddField("highestPoints", DBManager.hCollected);
-        form.AddField("averagePoints", DBManager.aCollected);
+        form.AddField("powerUpsCollected", DBManager.pTotalCollected);
         WWW www = new WWW("https://kunet.kingston.ac.uk/k1609271/MultiplayerGame/UnityFiles/pushWin2.php", form); // assign the web adress to the www type WWW
         yield return www;
     }
@@ -69,7 +75,7 @@ public class GameOver : MonoBehaviour {
         form.AddField("gamesLost", DBManager.gamesLost);
         form.AddField("totalPoints", DBManager.tCollected);
         form.AddField("highestPoints", DBManager.hCollected);
-        form.AddField("averagePoints", DBManager.aCollected);
+        form.AddField("powerUpsCollected", DBManager.pTotalCollected);
         WWW www = new WWW("https://kunet.kingston.ac.uk/k1609271/MultiplayerGame/UnityFiles/pushLose.php", form);
         yield return www;
   

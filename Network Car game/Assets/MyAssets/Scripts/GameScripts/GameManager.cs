@@ -62,17 +62,20 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore()
     {
         score = score + 1;
+        DBManager.pCollected = DBManager.pCollected + 1;
         DBManager.score = score;
     }
 
     public void IncreaseScore5()
     {
         score = score + 5;
+        DBManager.pCollected = DBManager.pCollected + 1 ;
         DBManager.score = score;
     }
 
     public void IncreaseTime()
     {
+        DBManager.pCollected = DBManager.pCollected + 1;
         timer = timer + 10;
     }
 
