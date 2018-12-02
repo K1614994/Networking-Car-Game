@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class LobbyCanvas : MonoBehaviour {
 
     [SerializeField]
@@ -22,5 +23,10 @@ public class LobbyCanvas : MonoBehaviour {
         {
             print("Join Room failed");
         }
+    }
+
+    public void leaveLobbyPage ()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("AccountPage");
     }
 }

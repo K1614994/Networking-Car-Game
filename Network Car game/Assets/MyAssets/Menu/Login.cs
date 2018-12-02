@@ -38,6 +38,11 @@ public class Login : MonoBehaviour {
         }
     }
 
+    public void linkFunc()
+    {
+        Application.OpenURL("https://kunet.kingston.ac.uk/k1609271/MultiplayerGame/UserLogin.php");
+    }
+
     public void VerifyInputs()
     {
         submitButton.interactable = (nameField.text.Length >= 1 && nameField.text.Length <= 30 && passwordField.text.Length >= 1 && passwordField.text.Length <= 20);

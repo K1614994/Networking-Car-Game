@@ -10,29 +10,19 @@ public class ChangeCarColour : MonoBehaviour {
         CallColour();
     }
 
-    public void carYellow()
+    public void carBlue()
     {
         DBManager.carColour = 2;
         CallColour();
     }
 
-    public void carBlue()
+    public void carGreen()
     {
         DBManager.carColour = 3;
         CallColour();
     }
 
-    public void carGreen()
-    {
-        DBManager.carColour = 4;
-        CallColour();
-    }
 
-    public void carPink()
-    {
-        DBManager.carColour = 5;
-        CallColour();
-    }
 
     public void CallColour()
     {

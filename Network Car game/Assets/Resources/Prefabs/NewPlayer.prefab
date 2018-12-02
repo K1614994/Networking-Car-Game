@@ -437,9 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf2ff92eb68a9b4aa3a0554cd5e43d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Material1: {fileID: 2100000, guid: 31d1c671c238c7840aad3992140c4bb3, type: 2}
-  Material2: {fileID: 2100000, guid: 60bcfd51d8bfeba47b2012cc604195e3, type: 2}
-  Material3: {fileID: 2100000, guid: bc83640b22846c44f8393a85a5c7b45a, type: 2}
-  Material4: {fileID: 2100000, guid: 0f4a4a4748666ef45a016a969c20d6b5, type: 2}
-  Material5: {fileID: 2100000, guid: 414196fa64b211b4a904f16f96e4761e, type: 2}
+  Material1: {fileID: 2100000, guid: 31519c69ca7480a47a2e875057962981, type: 2}
+  Material2: {fileID: 2100000, guid: d594dd5f97c95af43b577c3ace270413, type: 2}
+  Material3: {fileID: 2100000, guid: 311745311fe655347a9d9a87c17237e2, type: 2}
   Object: {fileID: 1102495462786150}
