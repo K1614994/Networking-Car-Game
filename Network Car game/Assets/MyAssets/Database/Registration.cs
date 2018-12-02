@@ -27,7 +27,6 @@ public class Registration : MonoBehaviour
         if (www.text == "0")
         {
             Debug.Log("User Created Successfully");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Login");
             nameField.text = "";
             emailField.text = "";
             passwordField.text = "";

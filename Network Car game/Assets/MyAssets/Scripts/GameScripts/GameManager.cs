@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DBManager.score = 0;
-        timer = 15;
+        timer = 60;
 
         
         Collectables = GameObject.FindGameObjectsWithTag("Collectable") ;

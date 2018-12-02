@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MyAssets/PhotonLobby2.unity
-    guid: 61cfee491b8f1cf4eb1c49822098033a
-  - enabled: 1
-    path: Assets/MyAssets/SceneTest.unity
-    guid: bb9e9bc899e5e294a833a22f9da371d0
-  - enabled: 1
     path: Assets/MyAssets/Menu/LoginPage.unity
     guid: 436e1a31a3b0c754992ee5e9745fd247
   - enabled: 1
     path: Assets/MyAssets/Menu/AccountPage.unity
     guid: 1751909f3810c9643aea70be897e02ee
+  - enabled: 1
+    path: Assets/MyAssets/PhotonLobby2.unity
+    guid: 61cfee491b8f1cf4eb1c49822098033a
+  - enabled: 1
+    path: Assets/MyAssets/SceneTest.unity
+    guid: bb9e9bc899e5e294a833a22f9da371d0
   - enabled: 1
     path: Assets/MyAssets/Menu/GameOverMenu.unity
     guid: 2a88c0d8b8355eb4da1681af4e1edd6b
