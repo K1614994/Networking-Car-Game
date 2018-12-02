@@ -42,20 +42,10 @@ public class GameManager : MonoBehaviour
             PhotonNetwork.LoadLevel("GameOverMenu");
         }
 
-        if (timer <= 50)
-        {
-            //var MyIndex = Random.Range(0, Collectables5.Length);
-            Collectables5[0].GetComponent<MeshRenderer>().enabled = false; 
-            Collectables5[0].GetComponent<SphereCollider>().enabled = false;
-            
-        }
+        
          
 
-        //if (timer == 70)
-        //{
-        //    var MyIndex5 = Random.Range(0, Collectables5.Length);
-        //    Collectables[MyIndex5].SetActive(false);
-        //}
+       
 
 
     }
@@ -63,7 +53,6 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore()
     {
         score = score + 1;
-        DBManager.pTotalCollected = DBManager.pTotalCollected + 1;
         DBManager.score = score;
     }
 

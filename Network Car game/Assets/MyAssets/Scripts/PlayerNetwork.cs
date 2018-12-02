@@ -84,9 +84,12 @@ public class PlayerNetwork : MonoBehaviour
         
     }
 
+    
+
     Transform GetRandomSpawnPoint()
     {
-        var spawnPoints = GetAllObjectsOfTypeInScene<SpawnPoints>();
+         var spawnPoints = GetAllObjectsOfTypeInScene<SpawnPoints>();
+
         if (spawnPoints.Count ==0)
         {
             return defaultSpawnPoint.transform;
@@ -96,7 +99,8 @@ public class PlayerNetwork : MonoBehaviour
             return spawnPoints[Random.Range(0, spawnPoints.Count)].transform;
         }
     }
-    
+
+   
 
     public static List<GameObject>GetAllObjectsOfTypeInScene<T>()
     {
