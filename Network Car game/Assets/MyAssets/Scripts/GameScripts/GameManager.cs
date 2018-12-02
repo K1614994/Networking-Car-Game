@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        timer = 60;
+        DBManager.score = 0;
+        timer = 15;
 
         
         Collectables = GameObject.FindGameObjectsWithTag("Collectable") ;
@@ -62,20 +63,20 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore()
     {
         score = score + 1;
-        DBManager.pCollected = DBManager.pCollected + 1;
+        DBManager.pTotalCollected = DBManager.pTotalCollected + 1;
         DBManager.score = score;
     }
 
     public void IncreaseScore5()
     {
         score = score + 5;
-        DBManager.pCollected = DBManager.pCollected + 1 ;
+        DBManager.pTotalCollected = DBManager.pTotalCollected + 1 ;
         DBManager.score = score;
     }
 
     public void IncreaseTime()
     {
-        DBManager.pCollected = DBManager.pCollected + 1;
+        DBManager.pTotalCollected = DBManager.pTotalCollected + 1;
         timer = timer + 10;
     }
 

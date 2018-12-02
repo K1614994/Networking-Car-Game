@@ -15,12 +15,10 @@ public class GameOver : MonoBehaviour {
         Debug.Log(DBManager.score);
        
         PointsCollected.text =  "You have collected " + DBManager.score + " points"; // assign this text and variable to the .text
-        tCol = DBManager.tCollected;
-        DBManager.tCollected = tCol + DBManager.score;
+    
+        DBManager.tCollected = DBManager.tCollected + DBManager.score;
 
-        pCol = DBManager.pTotalCollected;
-        DBManager.pTotalCollected = pCol + DBManager.pCollected;
-
+    
 
         if (DBManager.score > DBManager.hCollected)
         {

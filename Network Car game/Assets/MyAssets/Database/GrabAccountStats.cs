@@ -46,7 +46,7 @@ public class GrabAccountStats : MonoBehaviour {
         tCollected.text = "Total Points Collected: " + DBManager.tCollected;
         DBManager.hCollected = int.Parse(webResults[6]);
         hCollected.text = "Highest Points Collected: " + DBManager.hCollected;
-        DBManager.pCollected = int.Parse(webResults[7]);
-        aCollected.text = "Average Points Collected: " + DBManager.pCollected;
+        DBManager.pTotalCollected = int.Parse(webResults[7]);
+        aCollected.text = "Power Ups Collected: " + DBManager.pTotalCollected;
     }
 }

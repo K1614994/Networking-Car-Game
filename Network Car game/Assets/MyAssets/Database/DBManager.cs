@@ -15,7 +15,7 @@ public static class DBManager
     public static int gamesLost;
     public static int tCollected;
     public static int hCollected;
-    public static int pCollected;
+    public static int pCollected = 0;
     public static int pTotalCollected;
 
 
