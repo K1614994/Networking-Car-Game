@@ -390,7 +390,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 609464388}
         m_MethodName: SetActive
@@ -401,7 +401,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 609464390}
         m_MethodName: CallRegister
@@ -1538,6 +1538,7 @@ GameObject:
   - component: {fileID: 821830204}
   - component: {fileID: 821830203}
   - component: {fileID: 821830202}
+  - component: {fileID: 821830205}
   m_Layer: 5
   m_Name: usernameInputField
   m_TagString: Untagged
@@ -1673,6 +1674,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 821830200}
   m_CullTransparentMesh: 0
+--- !u!114 &821830205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821830200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b321caec5a51014890b51250de67353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextFields: {fileID: 2038925743}
 --- !u!1 &825471193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,6 +1826,7 @@ GameObject:
   - component: {fileID: 881393204}
   - component: {fileID: 881393207}
   - component: {fileID: 881393206}
+  - component: {fileID: 881393208}
   - component: {fileID: 881393205}
   m_Layer: 5
   m_Name: emailInputField
@@ -1949,6 +1963,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 881393203}
   m_CullTransparentMesh: 0
+--- !u!114 &881393208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881393203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b321caec5a51014890b51250de67353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextFields: {fileID: 1683181170}
 --- !u!1 &906282655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,7 +2297,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2426,7 +2452,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2668,6 +2694,7 @@ GameObject:
   - component: {fileID: 1213866283}
   - component: {fileID: 1213866286}
   - component: {fileID: 1213866285}
+  - component: {fileID: 1213866287}
   - component: {fileID: 1213866284}
   m_Layer: 5
   m_Name: passwordInputField
@@ -2804,6 +2831,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213866282}
   m_CullTransparentMesh: 0
+--- !u!114 &1213866287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1213866282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b321caec5a51014890b51250de67353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextFields: {fileID: 881393205}
 --- !u!1 &1225178606
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3440,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -3556,7 +3595,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -3901,6 +3940,7 @@ GameObject:
   - component: {fileID: 1683181169}
   - component: {fileID: 1683181172}
   - component: {fileID: 1683181171}
+  - component: {fileID: 1683181173}
   - component: {fileID: 1683181170}
   m_Layer: 5
   m_Name: usernameInputField
@@ -4037,6 +4077,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1683181168}
   m_CullTransparentMesh: 0
+--- !u!114 &1683181173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683181168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b321caec5a51014890b51250de67353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextFields: {fileID: 1213866284}
 --- !u!1 &1759942104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,7 +4542,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -4865,7 +4917,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -4900,6 +4952,7 @@ GameObject:
   - component: {fileID: 2038925742}
   - component: {fileID: 2038925745}
   - component: {fileID: 2038925744}
+  - component: {fileID: 2038925746}
   - component: {fileID: 2038925743}
   m_Layer: 5
   m_Name: passwordInputField
@@ -5036,6 +5089,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2038925741}
   m_CullTransparentMesh: 0
+--- !u!114 &2038925746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038925741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b321caec5a51014890b51250de67353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextFields: {fileID: 821830202}
 --- !u!1 &2140158429
 GameObject:
   m_ObjectHideFlags: 0
