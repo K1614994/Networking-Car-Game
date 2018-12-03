@@ -59,7 +59,7 @@ public class PlayerNetwork : MonoBehaviour
     [PunRPC]
     private void RPC_LoadGameOthers()
     {
-        PhotonNetwork.LoadLevel(1);
+        PhotonNetwork.LoadLevel("SceneTest");
     }
         
     [PunRPC]
@@ -116,5 +116,11 @@ public class PlayerNetwork : MonoBehaviour
         }
 
         return objectsInScene;
+    }
+
+    public void PlayerLeftMatch()
+    {
+        PlayersInGame = 0;
+        PhotonNetwork.LoadLevel("PhotonLobby2");
     }
 }

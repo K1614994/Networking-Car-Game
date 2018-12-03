@@ -7,6 +7,6 @@ public class LoadLobbyMenu : MonoBehaviour {
 
     public void LoadLobby()
     {
-        SceneManager.LoadScene("PhotonLobby2");
+        PhotonNetwork.LoadLevel("PhotonLobby2");
     }
 }

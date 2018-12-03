@@ -6,8 +6,8 @@ public class LeaveCurrentMatch : MonoBehaviour {
 
 public void OnClick_LeaveMatch()
     {
-        PhotonNetwork.LoadLevel("PhotonLobby2");
         PhotonNetwork.LeaveRoom();
+        PlayerNetwork.Instance.PlayerLeftMatch();
 
     }
 }
