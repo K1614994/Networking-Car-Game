@@ -37,5 +37,5 @@ public class ChangeCarColour : MonoBehaviour {
         WWW www = new WWW("https://kunet.kingston.ac.uk/k1609271/MultiplayerGame/UnityFiles/changeCar.php", form); // assign the web adress to the www type WWW
         yield return www;
 
-    } // deletes the users account
+    } 
 }
