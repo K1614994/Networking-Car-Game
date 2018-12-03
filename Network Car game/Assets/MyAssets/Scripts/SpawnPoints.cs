@@ -6,7 +6,7 @@ public class SpawnPoints : MonoBehaviour {
 
     private void Awake()
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
 

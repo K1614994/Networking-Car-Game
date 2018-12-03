@@ -78,6 +78,7 @@ public class PlayerNetwork : MonoBehaviour
     [PunRPC]
     private void RPC_CreatePlayer()
     {
+    
         var spawnPoint = GetRandomSpawnPoint();
             
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "NewPlayer"), spawnPoint.position,spawnPoint.rotation,0);
@@ -120,7 +121,7 @@ public class PlayerNetwork : MonoBehaviour
 
     public void PlayerLeftMatch()
     {
-        PlayersInGame = 0;
-        PhotonNetwork.LoadLevel("PhotonLobby2");
+        PlayersInGame = PlayersInGame - 1;
+    
     }
 }
