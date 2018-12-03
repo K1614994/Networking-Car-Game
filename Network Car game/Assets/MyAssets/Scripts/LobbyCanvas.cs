@@ -27,7 +27,6 @@ public class LobbyCanvas : MonoBehaviour {
 
     public void leaveLobbyPage ()
     {
-        Destroy(GameObject.Find("DDOL"));
         UnityEngine.SceneManagement.SceneManager.LoadScene("AccountPage");
     }
 }
