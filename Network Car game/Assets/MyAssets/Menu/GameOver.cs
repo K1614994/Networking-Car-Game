@@ -25,7 +25,7 @@ public class GameOver : MonoBehaviour {
             DBManager.hCollected = DBManager.score;
         }
 
-        if (DBManager.score > 1)
+        if (DBManager.score >= 30)
         {
             WinStatus.text = DBManager.username + " You have won the game "; // assign this text and variable to the .text
             DBManager.gamesPlayed = DBManager.gamesPlayed + 1;
@@ -81,7 +81,7 @@ public class GameOver : MonoBehaviour {
 
     public void Exit()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("AccountPage");
+        Application.Quit();
     }
 
     // Update is called once per frame
