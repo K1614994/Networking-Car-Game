@@ -5,10 +5,10 @@ using UnityEngine;
 public class LeaveCurrentMatch : MonoBehaviour {
 
 public void OnClick_LeaveMatch()
-    {
+    { 
         PhotonNetwork.LeaveRoom();
         Destroy(GameObject.Find("DDOL"));
-        PhotonNetwork.LoadLevel("PhotonLobby2");
+        PhotonNetwork.LoadLevel("PlayerNetwork2");
         PlayerNetwork.Instance.PlayerLeftMatch();
 
     }
